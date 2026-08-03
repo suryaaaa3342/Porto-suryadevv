@@ -1,0 +1,185 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CyberDev | Frontend Developer Portfolio</title>
+    <!-- Menghubungkan ke file CSS terpisah -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- NAVBAR -->
+    <nav class="navbar">
+      <a href="#" class="logo">&lt;Cyber<span>Dev</span>/&gt;</a>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact Us</a></li>
+      </ul>
+    </nav>
+
+    <!-- ABOUT / HERO SECTION -->
+    <section id="about">
+      <div class="hero">
+        <div class="hero-text">
+          <h3>SYSTEM.INIT( DEVELOPER )</h3>
+          <h1>Frontend developer</h1>
+          <p>
+            Information Systems graduate with a strong foundation in software
+            development, digital transformation, and data-driven systems
+            governance. Possesses deep understanding of the Software Development
+            Life Cycle (SDLC), database management (SQL), and user-centric
+            digital interface design. Highly committed to leveraging technical
+            expertise to support bureaucratic innovation, public service
+            efficiency, and digital diplomacy.
+          </p>
+          <a href="#projects" class="cyber-btn">LIHAT PROJECT</a>
+        </div>
+
+        <!-- USER PROFILE CARD DENGAN FOTO -->
+        <div class="cyber-card user-profile-card">
+          <div class="profile-avatar-wrapper">
+            <!-- Ganti 'profile.jpg' sesuai nama file foto kamu -->
+            <img src="surya.jpeg" alt="Foto Profil" class="profile-img" />
+          </div>
+          <h3 class="card-title">Surya Cakra Diningrat  </h3>
+          <p class="card-info">
+            <strong>Status:</strong> Available for Hire<br />
+            <strong>Focus:</strong> PHP, REACT.js, MYSQL<br />
+            <strong>Experience:</strong> Information Systems Graduate
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS SECTION -->
+    <section id="skills">
+      <h2 class="section-title">SKILLS & TECH</h2>
+      <div class="skills-grid">
+        <div class="cyber-card skill-box">
+          <h4>HTML5 / CSS3</h4>
+          <div class="skill-bar">
+            <div class="skill-fill" style="width: 95%"></div>
+          </div>
+        </div>
+        <div class="cyber-card skill-box">
+          <h4>JavaScript (ES6+)</h4>
+          <div class="skill-bar">
+            <div class="skill-fill" style="width: 88%"></div>
+          </div>
+        </div>
+        <div class="cyber-card skill-box">
+          <h4>React.js</h4>
+          <div class="skill-bar">
+            <div class="skill-fill" style="width: 80%"></div>
+          </div>
+        </div>
+        <div class="cyber-card skill-box">
+          <h4>Node.js / Express</h4>
+          <div class="skill-bar">
+            <div class="skill-fill" style="width: 75%"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS SECTION -->
+    <section id="projects">
+      <h2 class="section-title">FEATURED PROJECTS</h2>
+      <div class="projects-grid">
+        <!-- PROJECT 1 -->
+        <div class="cyber-card project-card">
+          <div>
+            <h3>web porto freelance</h3>
+            <p>Membuat web portofolio</p>
+            <div class="project-tags">
+              <span class="tag">HTML</span>
+              <span class="tag">CSS</span>
+            </div>
+          </div>
+          <!-- Ganti link href dengan URL Repository GitHub kamu -->
+          <a
+            href="https://github.com/suryaaaa3342/portojah"
+            target="_blank"
+            class="cyber-btn btn-sm"
+            >VIEW ON GITHUB</a
+          >
+        </div>
+
+        <!-- PROJECT 2 -->
+        <div class="cyber-card project-card">
+          <div>
+            <h3>E-Commerce Platform</h3>
+            <p>Sistem toko online dengan fitur filter produk dinamis.</p>
+            <div class="project-tags">
+              <span class="tag">PHP</span>
+              <span class="tag">CSS</span>
+            </div>
+          </div>
+          <!-- Ganti link href dengan URL Repository GitHub kamu -->
+          <a
+            href="https://github.com/suryaaaa3342/e-comarce"
+            target="_blank"
+            class="cyber-btn btn-sm"
+            >VIEW ON GITHUB</a
+          >
+        </div>
+
+  
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT US SECTION -->
+    <section id="contact">
+      <h2 class="section-title">CONTACT US</h2>
+      <div class="cyber-card contact-form">
+        <form
+          action="#"
+          method="POST"
+          onsubmit="
+            event.preventDefault();
+            alert('Pesan berhasil terkirim!');
+          "
+        >
+          <div class="form-group">
+            <label for="name">NAME_</label>
+            <input
+              type="text"
+              id="name"
+              placeholder="Masukkan nama Anda"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label for="email">EMAIL_</label>
+            <input
+              type="email"
+              id="email"
+              placeholder="nama@email.com"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label for="message">MESSAGE_</label>
+            <textarea
+              id="message"
+              rows="5"
+              placeholder="Tuliskan pesan Anda di sini..."
+              required
+            ></textarea>
+          </div>
+          <button type="submit" class="cyber-btn btn-full">
+            TRANSMIT MESSAGE
+          </button>
+        </form>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+      <p>&copy; 2026 CyberDev Portfolio. All systems operational.</p>
+    </footer>
+  </body>
+</html>
